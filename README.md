@@ -1,3 +1,7 @@
+## 写在前面
+ - 目前本版本处于beta阶段，请不要用于生产环境，除非你知道你在做什么
+ - 本版本暂时没加入LDAP接口，稳定版会将LDAP和无Agent方式抽象成API，2.x版本支持LDAP，请移步release中下载
+
 #欢迎使用Jumpserver
 **Jumpserver** 是一款由python编写开源的跳板机(堡垒机)系统，实现了跳板机应有的功能。基于ssh协议来管理，客户端无需安装agent。
 支持常见系统:
@@ -36,9 +40,10 @@ Web批量执行命令
 ### 文档
 
 * [访问wiki](https://github.com/ibuler/jumpserver/wiki)
-* [快速安装](https://github.com/ibuler/jumpserver/wiki/快速安装)
-* [名词解释](https://github.com/ibuler/jumpserver/wiki/名称解释)
-* [快速开始](https://github.com/ibuler/jumpserver/wiki/快速开始)
+* [快速安装](https://github.com/ibuler/jumpserver/wiki/Quickinstall)
+* [名词解释](https://github.com/ibuler/jumpserver/wiki/Termexplain)
+* [快速开始](https://github.com/ibuler/jumpserver/wiki/Quickstart)
+* [FAQ](https://github.com/ibuler/jumpserver/wiki/FAQs)
 
 ### 特点
 

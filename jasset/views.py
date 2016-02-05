@@ -138,7 +138,7 @@ def asset_add(request):
         is_active = True if request.POST.get('is_active') == '1' else False
         use_default_auth = request.POST.get('use_default_auth', '')
         try:
-            if Asset.objects.filter(hostname=str(hostname)):
+            if Asset.objects.filter(hostname=unicode(hostname)):
                 error = u'该主机名 %s 已存在!' % hostname
                 raise ServerError(error)
 
@@ -227,7 +227,7 @@ def asset_edit(request):
                 if use_default_auth:
                     af_save.username = ''
                     af_save.password = ''
-                    af_save.port = None
+                    # af_save.port = None
                 else:
                     if password:
                         password_encode = CRYPTOR.encrypt(password)
